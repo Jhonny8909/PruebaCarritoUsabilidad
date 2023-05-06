@@ -6,6 +6,8 @@ public class SpawnObjects : MonoBehaviour
 {
 
     public GameObject[] enemies;
+    
+    
 
     public float timeSpawn = 1;
 
@@ -16,6 +18,7 @@ public class SpawnObjects : MonoBehaviour
 
     public Transform YrangeUp;
     public Transform YrangeDown;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,7 @@ public class SpawnObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void SpawnEnemies()
@@ -38,6 +41,6 @@ public class SpawnObjects : MonoBehaviour
         
         spawnPosition = new Vector3(Random.Range(XrangeLeft.position.x,XrangeRight.position.x),Random.Range(YrangeDown.position.y,YrangeUp.position.y),0);
 
-        GameObject enemie = Instantiate(enemies[0], spawnPosition, gameObject.transform.rotation);
+        GameObject enemie = Instantiate(enemies[Random.Range(0,enemies.Length)], spawnPosition, gameObject.transform.rotation);
     }
 }
