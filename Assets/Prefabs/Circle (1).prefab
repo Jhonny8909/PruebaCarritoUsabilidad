@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4263010254294720292}
   - component: {fileID: 4263010254294720289}
   - component: {fileID: 4263010254294720290}
+  - component: {fileID: -1791559592890074595}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Untagged
@@ -123,3 +124,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-1791559592890074595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263010254294720293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30bbf980c38f394883edfd8a49d2755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownDespawn: 5
+  tiempoCooldown: 5
+  capsula: {fileID: 4263010254294720293}
