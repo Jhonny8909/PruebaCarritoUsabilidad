@@ -9,6 +9,7 @@ public class Damage : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
+            Destroy(gameObject);
         }
     }
 }

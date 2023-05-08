@@ -11,6 +11,7 @@ public class Moneda : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             FindObjectOfType<MenuManager>().AddPuntuation(moneda);
+            Destroy(gameObject);
         }
     }
 }
