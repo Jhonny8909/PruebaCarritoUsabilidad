@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1043789696386928092}
   - component: {fileID: -3129835676215105059}
   - component: {fileID: 6892628927077156846}
+  - component: {fileID: -7383256052964492718}
   m_Layer: 0
   m_Name: Policia
   m_TagString: Untagged
@@ -120,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30bbf980c38f394883edfd8a49d2755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownDespawn: 5
-  tiempoCooldown: 5
+  cooldownDespawn: 3
+  tiempoCooldown: 3
   capsula: {fileID: 1043789696386928088}
 --- !u!61 &6892628927077156846
 BoxCollider2D:
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0040355325, y: 0.032280564}
@@ -149,3 +150,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1898268, y: 2.8854387}
   m_EdgeRadius: 0
+--- !u!114 &-7383256052964492718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043789696386928088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ad390d60aa0c140a8760b58f881368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

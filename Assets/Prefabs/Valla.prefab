@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4263010254294720289}
   - component: {fileID: -1791559592890074595}
   - component: {fileID: 8624233851305167898}
+  - component: {fileID: -2416968604245190194}
   m_Layer: 0
   m_Name: Valla
   m_TagString: Untagged
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0037228167, y: 0.0093076825}
@@ -149,3 +150,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3932061, y: 0.18546063}
   m_EdgeRadius: 0
+--- !u!114 &-2416968604245190194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263010254294720293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ad390d60aa0c140a8760b58f881368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
