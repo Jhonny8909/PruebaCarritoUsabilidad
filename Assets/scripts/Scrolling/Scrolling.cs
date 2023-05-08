@@ -9,9 +9,6 @@ public class Scrolling : MonoBehaviour
     public float ScrollOfSet;
     private Material mat;
 
-    Vector2 StartPos;
-    float NewPos;
-
     // Start is called before the first frame update
     void Start()
     {
