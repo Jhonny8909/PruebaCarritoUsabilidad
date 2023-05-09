@@ -48,6 +48,10 @@ public class PlayerRespawn : MonoBehaviour
         else if (life == 3)
         {
             hearts[2].SetActive(true);
+            
+        }else if (life == 4)
+        {
+            life--;
         }
         Debug.Log(life);
     }

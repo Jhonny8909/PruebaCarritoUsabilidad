@@ -25,7 +25,7 @@ public class MenuManager : MonoBehaviour
     {
          
         puntosfloat += Time.deltaTime;
-        puntos = Convert.ToInt32(puntosfloat);
+        puntos =  100 * Convert.ToInt32(puntosfloat);
         puntuacion.text = puntos.ToString();
 
         if (MxPuntos < puntos)
