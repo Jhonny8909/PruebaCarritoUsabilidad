@@ -7,7 +7,9 @@ public class Men_iNICIAL : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        SceneManager.LoadScene("Juego");
+        Time.timeScale = 1f;
+        
     }
 
     public void Salir()

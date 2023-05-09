@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SpawnObjects : MonoBehaviour
 {
+    public TextMeshProUGUI nivel;
+    private string enunciado;
 
     public GameObject[] enemies;
     
-    public float timeSpawnEnemies = 1;
-    public float repeatSpawnRateEnemies = 3;
+    public float timeSpawnEnemies = 0;
+    public float repeatSpawnRateEnemies = 0;
 
 
 
     public GameObject[] Objects;
 
-    public float timeSpawnFruits = 1;
-    public float repeatSpawnRateObjects = 3;
+    public float timeSpawnFruits = 0;
+    public float repeatSpawnRateObjects = 0;
 
     public Transform XrangeLeft;
     public Transform XrangeRight;
@@ -39,30 +43,47 @@ public class SpawnObjects : MonoBehaviour
     {
         difficulty += Time.deltaTime;
 
-        if (difficulty > 10 && difficulty < 20)
+        if (difficulty > 0 && difficulty < 10)
         {
             repeatSpawnRateEnemies = 5;
+            repeatSpawnRateObjects = 2;
+            enunciado = "Nivel 1";
+            nivel.text = enunciado;
+        }
+        if (difficulty > 10 && difficulty < 20)
+        {
+            repeatSpawnRateEnemies = 4;
             repeatSpawnRateObjects =  2;
+            enunciado = "Nivel 2";
+            nivel.text = enunciado;
         }
         if (difficulty > 20 && difficulty < 30)
         {
-            repeatSpawnRateEnemies = 4;
+            repeatSpawnRateEnemies = 3;
             repeatSpawnRateObjects = 3;
+            enunciado = "Nivel 3";
+            nivel.text = enunciado;
         }
         if (difficulty > 30 && difficulty < 40)
         {
-            repeatSpawnRateEnemies = 3;
+            repeatSpawnRateEnemies = 2;
             repeatSpawnRateObjects = 4;
+            enunciado = "Nivel 4";
+            nivel.text = enunciado;
         }
         if (difficulty > 40 && difficulty < 50)
         {
-            repeatSpawnRateEnemies = 2;
+            repeatSpawnRateEnemies = 1;
             repeatSpawnRateObjects = 5;
+            enunciado = "Nivel 5";
+            nivel.text = enunciado;
         }
         if (difficulty > 50)
         {
-            repeatSpawnRateEnemies = 1;
+            repeatSpawnRateEnemies = .5f;
             repeatSpawnRateObjects = 6;
+            enunciado = "Nivel 6";
+            nivel.text = enunciado;
         }
     }
 
@@ -76,7 +97,7 @@ public class SpawnObjects : MonoBehaviour
     IEnumerator ObjectsDifficulty()
     {
         yield return new WaitForSeconds(repeatSpawnRateObjects);
-        SpawnEnemies();
+        Spawn();
         StartCoroutine("ObjectsDifficulty");
     }
 
@@ -88,7 +109,7 @@ public class SpawnObjects : MonoBehaviour
 
         GameObject enemie = Instantiate(enemies[Random.Range(0,enemies.Length)], spawnPosition, gameObject.transform.rotation);
     }
-    public void SpawnFruits()
+    public void Spawn()
     {
         Vector3 spawnPosition = new Vector3(0, 0, 0);
 

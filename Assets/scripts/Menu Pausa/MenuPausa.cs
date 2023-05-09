@@ -22,8 +22,13 @@ public class MenuPausa : MonoBehaviour
         menuPausa.SetActive(false);
     }
 
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene("Juego");
+    }
+
     public void Menu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        SceneManager.LoadScene("Menu");
     }
 }
