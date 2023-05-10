@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scrolling : MonoBehaviour
 {
     [Range(1f, 20f)]
-    public float scrollSpeed = 1;
+    public float scrollSpeed = 5;
     public float ScrollOfSet;
     private Material mat;
 

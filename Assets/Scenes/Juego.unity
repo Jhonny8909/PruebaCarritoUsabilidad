@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a6661c46da2d645a4e0ef6337102b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 1
+  scrollSpeed: 17
   ScrollOfSet: 0
 --- !u!23 &1323335602
 MeshRenderer:
@@ -2348,7 +2348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 1544301611}
-  velocidad: 7
+  velocidad: 5
   rb: {fileID: 1784902860}
   maxY: 4.2
   minY: -4.3
