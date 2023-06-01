@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
 {
     public TextMeshProUGUI puntuacion;
     public int puntos;
+    public int pt;
 
     public TextMeshProUGUI MxPuntuacion;
     public int MxPuntos;
@@ -26,6 +27,7 @@ public class MenuManager : MonoBehaviour
          
         puntosfloat += Time.deltaTime;
         puntos =  100 * Convert.ToInt32(puntosfloat);
+        puntos = puntos + pt;
         puntuacion.text = puntos.ToString();
 
         if (MxPuntos < puntos)
@@ -35,9 +37,12 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void AddPuntuation(int puntuacion)
+    public void AddPuntuation(bool puntuacion)
     {
-        puntos += puntuacion;
+        if (puntuacion == true)
+        {
+            pt += 1000;
+        }
     }
 }
  

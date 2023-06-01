@@ -25,6 +25,7 @@ public class MenuPausa : MonoBehaviour
     public void Reiniciar()
     {
         SceneManager.LoadScene("Juego");
+        Time.timeScale = 1f;
     }
 
     public void Menu()

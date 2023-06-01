@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coleccion : MonoBehaviour
 {
-    public int moneda = 100;
+    public bool moneda = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

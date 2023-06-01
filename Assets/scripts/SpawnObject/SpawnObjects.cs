@@ -115,6 +115,6 @@ public class SpawnObjects : MonoBehaviour
 
         spawnPosition = new Vector3(Random.Range(XrangeLeft.position.x, XrangeRight.position.x), Random.Range(YrangeDown.position.y, YrangeUp.position.y), 0);
 
-        GameObject fruit = Instantiate(Objects[Random.Range(0, enemies.Length)], spawnPosition, gameObject.transform.rotation);
+        GameObject fruit = Instantiate(Objects[Random.Range(0, Objects.Length)], spawnPosition, gameObject.transform.rotation);
     }
 }
