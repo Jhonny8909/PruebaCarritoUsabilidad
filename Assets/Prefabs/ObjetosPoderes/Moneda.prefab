@@ -153,3 +153,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneda: 100
+  colicion1: {fileID: 8300000, guid: ba1686c626556744d922bc6aadf38f27, type: 3}

@@ -53,6 +53,6 @@ public class PlayerRespawn : MonoBehaviour
         {
             life--;
         }
-        Debug.Log(life);
+        
     }
 }
