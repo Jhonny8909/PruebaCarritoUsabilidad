@@ -24,5 +24,6 @@ public class ControladorSonido : MonoBehaviour
     public void EjecutarSonido(AudioClip sonido)
     {
         audiosource.PlayOneShot(sonido);
+        
     }
 }
