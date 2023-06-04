@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3129835676215105059}
   - component: {fileID: 6892628927077156846}
   - component: {fileID: -7383256052964492718}
+  - component: {fileID: 5389280070761611403}
   m_Layer: 0
   m_Name: Enemigo9
   m_TagString: Untagged
@@ -163,3 +164,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colicion1: {fileID: 8300000, guid: 1a149e79fd8956f4caf71fde046164e0, type: 3}
+--- !u!114 &5389280070761611403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043789696386928088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3e18df78b82f4d955fa72a0c4b6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
