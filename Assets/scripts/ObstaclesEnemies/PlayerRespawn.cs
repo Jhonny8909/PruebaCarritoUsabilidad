@@ -10,6 +10,7 @@ public class PlayerRespawn : MonoBehaviour
     
     private void Start()
     {
+        hearts = GameObject.FindGameObjectsWithTag("Vida");
         life = hearts.Length;
     }
     private void Update()

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Muro
   - Bala
+  - Joystick
+  - Vida
   layers:
   - Default
   - TransparentFX

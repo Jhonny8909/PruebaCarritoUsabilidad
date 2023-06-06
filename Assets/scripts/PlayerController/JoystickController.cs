@@ -12,10 +12,13 @@ public class JoystickController : MonoBehaviour
     public float maxX;
     public float minX;
 
+    public GameObject buscador;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        buscador = GameObject.FindGameObjectWithTag("Joystick");
+        joystick = buscador.GetComponent<FixedJoystick>();
     }
 
     // Update is called once per frame

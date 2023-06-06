@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7213028355990201265}
   - component: {fileID: 7213028355990201264}
   - component: {fileID: 7213028355990201267}
+  - component: {fileID: -3865565453475088349}
+  - component: {fileID: -5700275278417474947}
   m_Layer: 3
   m_Name: Carrito 6
   m_TagString: Player
@@ -101,13 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41be64cd14cb87447b0be1c0bfb5438a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
+  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   velocidad: 5
   rb: {fileID: 7213028355990201261}
   maxY: 4.2
   minY: -4.3
   maxX: 2.5
   minX: -2.5
+  buscador: {fileID: 0}
 --- !u!50 &7213028355990201261
 Rigidbody2D:
   serializedVersion: 4
@@ -267,3 +270,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3865565453475088349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213028355990201258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca93e3420e39e74687cbf5ebd8a8cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaPrefab: {fileID: 3849356782005599887, guid: dccb37064ffc21640922199928cf702b, type: 3}
+  velocidadBala: 10
+  tiempoEntreDisparos: 0.5
+  limiteY: 7
+  danioBala: 1
+--- !u!114 &-5700275278417474947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213028355990201258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30bbf980c38f394883edfd8a49d2755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownDespawn: 1
+  tiempoCooldown: 1
+  capsula: {fileID: 3849356782005599887, guid: dccb37064ffc21640922199928cf702b, type: 3}
